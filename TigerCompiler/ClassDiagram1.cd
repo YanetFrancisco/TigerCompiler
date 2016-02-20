@@ -1,0 +1,578 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TigerCompiler.AST.Adaptor_AST" Collapsed="true">
+    <Position X="108.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>AST\AdaptorAST.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Expression_Node" Collapsed="true">
+    <Position X="52.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAgAAAASAAAAABEQBAAAAAAAAAAAAAACAABCAA=</HashCode>
+      <FileName>AST\Expression\Expression_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Arraydec_Node" Collapsed="true">
+    <Position X="31.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABBAAAAAAAAAAAAAAIAACAA=</HashCode>
+      <FileName>AST\Expression\Non_Statement\Arraydec_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Aaccess_Node" Collapsed="true">
+    <Position X="45" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAEAAAAACAA=</HashCode>
+      <FileName>AST\Expression\Non_Statement\Atomic\Aaccess_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Access_Node" Collapsed="true">
+    <Position X="49.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAABAQAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>AST\Expression\Non_Statement\Atomic\Access_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Atomic_Node" Collapsed="true">
+    <Position X="47.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AST\Expression\Non_Statement\Atomic\Atomic_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Call_Node" Collapsed="true">
+    <Position X="51.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAIAIAAAAAAAACAAABAAAAAAAAAAAAAAAAAAKAA=</HashCode>
+      <FileName>AST\Expression\Non_Statement\Atomic\Call_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Idaccess_Node" Collapsed="true">
+    <Position X="54" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>AST\Expression\Non_Statement\Atomic\Idaccess_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.If_Node" Collapsed="true">
+    <Position X="56.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAACCAAAAAAAAABAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>AST\Expression\Non_Statement\Atomic\If_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Int_Node" Collapsed="true">
+    <Position X="38.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>AST\Expression\Non_Statement\Atomic\Int_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Nil_Node" Collapsed="true">
+    <Position X="40.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>AST\Expression\Non_Statement\Atomic\Nil_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.String_Node" Collapsed="true">
+    <Position X="42.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>AST\Expression\Non_Statement\Atomic\String_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Value_Node" Collapsed="true">
+    <Position X="47.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAQACAA=</HashCode>
+      <FileName>AST\Expression\Non_Statement\Atomic\Value_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Arithmetic_Node" Collapsed="true">
+    <Position X="21.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>AST\Expression\Non_Statement\Binary\Arithmetic\Arithmetic_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Div_Node" Collapsed="true">
+    <Position X="18" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>AST\Expression\Non_Statement\Binary\Arithmetic\Div_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Minus_Node" Collapsed="true">
+    <Position X="20.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>AST\Expression\Non_Statement\Binary\Arithmetic\Minus_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Mult_Node" Collapsed="true">
+    <Position X="22.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>AST\Expression\Non_Statement\Binary\Arithmetic\Mult_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Plus_Node" Collapsed="true">
+    <Position X="24.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>AST\Expression\Non_Statement\Binary\Arithmetic\Plus_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Binary_Node" Collapsed="true">
+    <Position X="16.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACACAAAAAAAA=</HashCode>
+      <FileName>AST\Expression\Non_Statement\Binary\Binary_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Comparer_Node" Collapsed="true">
+    <Position X="7.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AST\Expression\Non_Statement\Binary\Comparer\Comparer_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Gt_Node" Collapsed="true">
+    <Position X="4.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>AST\Expression\Non_Statement\Binary\Comparer\Gt_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Gteq_Node" Collapsed="true">
+    <Position X="6.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>AST\Expression\Non_Statement\Binary\Comparer\Gteq_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Lt_Node" Collapsed="true">
+    <Position X="9" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>AST\Expression\Non_Statement\Binary\Comparer\Lt_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Lteq_Node" Collapsed="true">
+    <Position X="11.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>AST\Expression\Non_Statement\Binary\Comparer\Lteq_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.And_Node" Collapsed="true">
+    <Position X="27" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>AST\Expression\Non_Statement\Binary\Logical\And_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Logical_Node" Collapsed="true">
+    <Position X="28" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AST\Expression\Non_Statement\Binary\Logical\Logical_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Or_Node" Collapsed="true">
+    <Position X="29.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>AST\Expression\Non_Statement\Binary\Logical\Or_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Eq_Node" Collapsed="true">
+    <Position X="13.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>AST\Expression\Non_Statement\Binary\Type_Comparer\Eq_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Noteq_Node" Collapsed="true">
+    <Position X="15.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>AST\Expression\Non_Statement\Binary\Type_Comparer\Noteq_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Typecomparer_Node" Collapsed="true">
+    <Position X="14.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AST\Expression\Non_Statement\Binary\Type_Comparer\Typecomparer_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Declist_Node" Collapsed="true">
+    <Position X="33.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAUAAAAAAAAAAAAAAAAABAAAAAAAAAAAAEAAAAACAg=</HashCode>
+      <FileName>AST\Expression\Non_Statement\Declist_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Expseq_Node" Collapsed="true">
+    <Position X="36" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>AST\Expression\Non_Statement\Expseq_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.NonStatement_Node" Collapsed="true">
+    <Position X="32.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AST\Expression\Non_Statement\NonStatement_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Recorddec_Node" Collapsed="true">
+    <Position X="58.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAEBAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>AST\Expression\Non_Statement\Recorddec_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Neg_Node" Collapsed="true">
+    <Position X="60.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>AST\Expression\Non_Statement\Unary\Neg_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Unary_Node" Collapsed="true">
+    <Position X="60.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>AST\Expression\Non_Statement\Unary\Unary_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Assign_Node" Collapsed="true">
+    <Position X="63" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAABAAAAAAAAAQAAAAAAAACAA=</HashCode>
+      <FileName>AST\Expression\Statement\Assign_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Arraytype_Node" Collapsed="true">
+    <Position X="72" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAIAACAA=</HashCode>
+      <FileName>AST\Expression\Statement\Declaration\Arraytype_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Declaration_Node" Collapsed="true">
+    <Position X="76.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AST\Expression\Statement\Declaration\Declaration_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Funcdec_Node" Collapsed="true">
+    <Position X="73" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAKAAIAAAAAAAAAAAAAABIAAAAwAAAAAAAAAAAACAA=</HashCode>
+      <FileName>AST\Expression\Statement\Declaration\Funcdec_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Recordtype_Node" Collapsed="true">
+    <Position X="78.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAEAAAAAAAAAAABAAAAgAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>AST\Expression\Statement\Declaration\Recordtype_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Typedec_Node" Collapsed="true">
+    <Position X="77.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAABAAAAAgAAAAAAAAAAAADAA=</HashCode>
+      <FileName>AST\Expression\Statement\Declaration\Typedec_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Var_Node" Collapsed="true">
+    <Position X="75.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACACAAAAAAAAAAAAAAABAAAAAAAAAQAAAAAAAACAA=</HashCode>
+      <FileName>AST\Expression\Statement\Declaration\Var_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Explist_Node" Collapsed="true">
+    <Position X="96.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAgAACAA=</HashCode>
+      <FileName>AST\Expression\Statement\Explist_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Field_Node" Collapsed="true">
+    <Position X="101.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAABAAAAAAAAAAAAAAAgAACAA=</HashCode>
+      <FileName>AST\Expression\Statement\Field_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Fieldlist_Node" Collapsed="true">
+    <Position X="65.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAiAA=</HashCode>
+      <FileName>AST\Expression\Statement\Fieldlist_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Break_Node" Collapsed="true">
+    <Position X="83.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>AST\Expression\Statement\Flow_Control\Break_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Flow_Control_Node" Collapsed="true">
+    <Position X="85.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AST\Expression\Statement\Flow_Control\Flow_Control_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.For_Node" Collapsed="true">
+    <Position X="85.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAACABABAAAAAAAAAAAAAAABABCAA=</HashCode>
+      <FileName>AST\Expression\Statement\Flow_Control\For_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.While_Node" Collapsed="true">
+    <Position X="87.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAACABABAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>AST\Expression\Statement\Flow_Control\While_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Func_Node" Collapsed="true">
+    <Position X="92.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAQAAABABAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>AST\Expression\Statement\Func_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Id_Node" Collapsed="true">
+    <Position X="94.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>AST\Expression\Statement\Id_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Proc_Node" Collapsed="true">
+    <Position X="99" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABABAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>AST\Expression\Statement\Proc_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Statement_Node" Collapsed="true">
+    <Position X="82" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AST\Expression\Statement\Statement_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Type_Node" Collapsed="true">
+    <Position X="67.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAQAAAAAACAA=</HashCode>
+      <FileName>AST\Expression\Statement\Type_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Typefield_Node" Collapsed="true">
+    <Position X="69.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAABAAAAAAAAAAAAAAAgAACAA=</HashCode>
+      <FileName>AST\Expression\Statement\Typefield_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Typefields_Node" Collapsed="true">
+    <Position X="90" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAiAA=</HashCode>
+      <FileName>AST\Expression\Statement\Typefields_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Unknown_Node" Collapsed="true">
+    <Position X="110.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AST\Unknown_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.IL_Generator" Collapsed="true">
+    <Position X="110.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAEAAAAAAFAAgABQEIABAAAICSAEgCAgoAEEAQAEAQA=</HashCode>
+      <FileName>IL_Generator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Alias_Info" Collapsed="true">
+    <Position X="9.5" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAIAAAIAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Info\Alias_Info.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Array_Info" Collapsed="true">
+    <Position X="11.75" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Info\Array_Info.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Int_Info" Collapsed="true">
+    <Position X="14" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Info\Int_Info.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Nil_Info" Collapsed="true">
+    <Position X="2.75" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Info\Nil_Info.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Procedure_Info" Collapsed="true">
+    <Position X="0.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAQAAAAAAQAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Info\Procedure_Info.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Record_Info" Collapsed="true">
+    <Position X="5" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAgAAABAAAAAACACAAAAAAAAAAwAA=</HashCode>
+      <FileName>Info\Record_Info.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.String_Info" Collapsed="true">
+    <Position X="7.25" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Info\String_Info.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Tiger_Info" Collapsed="true">
+    <Position X="8.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Info\Tiger_Info.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Type_Info" Collapsed="true">
+    <Position X="8.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAIAAAAAAAAgAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Info\Type_Info.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Variable_Info" Collapsed="true">
+    <Position X="16.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAgAAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Info\Variable_Info.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.ParsingExceptions" Collapsed="true">
+    <Position X="112" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>ParsingExceptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Program" Collapsed="true">
+    <Position X="113.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAACAAAAAAAAACAAAAAIAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Report" Collapsed="true">
+    <Position X="108.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Report.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Scope" Collapsed="true">
+    <Position X="110.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAACAAACBIQAAACBCUwAEgAAAAICAgRAgEABMEAQA=</HashCode>
+      <FileName>Scope.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Typeblock_Node" Collapsed="true">
+    <Position X="77.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Typeblock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Grammar.tigerLexer" Collapsed="true">
+    <Position X="112" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DYt2lp57bQi/u8x0+NLsr0OCuqvusvF61Bc7mwVyt4o=</HashCode>
+      <FileName>Grammar\tigerLexer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Grammar.tigerParser" Collapsed="true">
+    <Position X="113.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>75bk3tb+LeWfumsqwd3Xr9OzvP//pqUi1GQDup0Tq+8=</HashCode>
+      <FileName>Grammar\tigerParser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Varblock_Node" Collapsed="true">
+    <Position X="75.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Varblock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Funcblock_Node" Collapsed="true">
+    <Position X="73" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Funcblock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Block_Node" Collapsed="true">
+    <Position X="75.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Blocknode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TigerCompiler.Error_Node" Collapsed="true">
+    <Position X="104" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAIAAACAA=</HashCode>
+      <FileName>Error_Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="TigerCompiler.ErrorCodes" Collapsed="true">
+    <Position X="108.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAABAAIBAAAAAAAIAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ErrorCodes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TigerCompiler.Tiger_Type" Collapsed="true">
+    <Position X="110.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIACQAAwAAAAAAAAAAAAAAAAAAAAAACBCA=</HashCode>
+      <FileName>Tiger_Type.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

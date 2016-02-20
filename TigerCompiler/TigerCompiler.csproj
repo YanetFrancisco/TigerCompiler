@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FD8F9626-16C9-41C2-A784-C8CF4464F3DC}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TigerCompiler</RootNamespace>
+    <AssemblyName>tiger</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.3.4.8517, Culture=neutral, PublicKeyToken=7c8d1e209144b9fe, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Ciberestudios\Ciberestudio IV\Compilacion\TIGER - Proyecto de Compilación (2013-2014)\02 Antlr 3.4 &amp; AntlrWorks 1.4.3\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AST\Expression\Error_Node.cs" />
+    <Compile Include="AST\Expression\Non_Statement\Arraydec_Node.cs" />
+    <Compile Include="AST\Expression\Non_Statement\Atomic\Aaccess_Node.cs" />
+    <Compile Include="AST\Expression\Non_Statement\Atomic\Access_Node.cs" />
+    <Compile Include="AST\Expression\Non_Statement\Atomic\If_Node.cs" />
+    <Compile Include="AST\Expression\Non_Statement\Declist_Node.cs" />
+    <Compile Include="AST\Expression\Non_Statement\Recorddec_Node.cs" />
+    <Compile Include="AST\Expression\Statement\Assign_Node.cs" />
+    <Compile Include="AST\Expression\Statement\Declaration\Block\Blocknode.cs" />
+    <Compile Include="AST\Expression\Statement\Declaration\Block\Funcblock.cs" />
+    <Compile Include="AST\Expression\Statement\Declaration\Block\Typeblock.cs" />
+    <Compile Include="AST\Expression\Statement\Declaration\Block\Varblock.cs" />
+    <Compile Include="AST\Expression\Statement\Declaration\Var_Node.cs" />
+    <Compile Include="AST\Expression\Statement\Explist_Node.cs" />
+    <Compile Include="AST\Expression\Statement\Field_Node.cs" />
+    <Compile Include="AST\Expression\Statement\Proc_Node.cs" />
+    <Compile Include="AST\Expression\Statement\Typefield_Node.cs" />
+    <Compile Include="AST\Expression\Unknown_Node.cs" />
+    <Compile Include="ErrorCodes.cs" />
+    <Compile Include="Grammar\tigerLexer.cs" />
+    <Compile Include="Grammar\tigerParser.cs" />
+    <Compile Include="IL_Generator.cs" />
+    <Compile Include="Info\Alias_Info.cs" />
+    <Compile Include="Info\Array_Info.cs" />
+    <Compile Include="AST\AdaptorAST.cs" />
+    <Compile Include="AST\Expression\Non_Statement\Binary\Logical\And_Node.cs" />
+    <Compile Include="AST\Expression\Non_Statement\Binary\Arithmetic\Arithmetic_Node.cs" />
+    <Compile Include="AST\Expression\Non_Statement\Atomic\Atomic_Node.cs" />
+    <Compile Include="AST\Expression\Non_Statement\Binary\Binary_Node.cs" />
+    <Compile Include="AST\Expression\Statement\Flow_Control\Break_Node.cs" />
+    <Compile Include="AST\Expression\Non_Statement\Binary\Comparer\Comparer_Node.cs" />
+    <Compile Include="AST\Expression\Non_Statement\Binary\Arithmetic\Div_Node.cs" />
+    <Compile Include="AST\Expression\Non_Statement\Binary\Type_Comparer\Eq_Node.cs" />
+    <Compile Include="AST\Expression\Non_Statement\Atomic\Expression_Node.cs" />
+    <Compile Include="AST\Expression\Non_Statement\Expseq_Node.cs" />
+    <Compile Include="AST\Expression\Statement\Flow_Control\For_Node.cs" />
+    <Compile Include="AST\Expression\Statement\Declaration\Arraytype_Node.cs" />
+    <Compile Include="AST\Expression\Non_Statement\Atomic\Call_Node.cs" />
+    <Compile Include="AST\Expression\Statement\Declaration\Declaration_Node.cs" />
+    <Compile Include="AST\Expression\Statement\Fieldlist_Node.cs" />
+    <Compile Include="AST\Expression\Statement\Flow_Control\Flow_Control_Node.cs" />
+    <Compile Include="AST\Expression\Statement\Declaration\Funcdec_Node.cs" />
+    <Compile Include="AST\Expression\Statement\Func_Node.cs" />
+    <Compile Include="AST\Expression\Statement\Declaration\Recordtype_Node.cs" />
+    <Compile Include="AST\Expression\Statement\Statement_Node.cs" />
+    <Compile Include="AST\Expression\Non_Statement\Binary\Comparer\Gteq_Node.cs" />
+    <Compile Include="AST\Expression\Non_Statement\Binary\Comparer\Gt_Node.cs" />
+    <Compile Include="AST\Expression\Non_Statement\Binary\Logical\Logical_Node.cs" />
+    <Compile Include="AST\Expression\Non_Statement\Binary\Comparer\Lteq_Node.cs" />
+    <Compile Include="AST\Expression\Non_Statement\Binary\Comparer\Lt_Node.cs" />
+    <Compile Include="AST\Expression\Non_Statement\Binary\Arithmetic\Minus_Node.cs" />
+    <Compile Include="AST\Expression\Non_Statement\Binary\Arithmetic\Mult_Node.cs" />
+    <Compile Include="AST\Expression\Non_Statement\Unary\Neg_Node.cs" />
+    <Compile Include="AST\Expression\Non_Statement\Binary\Type_Comparer\Noteq_Node.cs" />
+    <Compile Include="AST\Expression\Non_Statement\Atomic\Int_Node.cs" />
+    <Compile Include="AST\Expression\Non_Statement\Atomic\Nil_Node.cs" />
+    <Compile Include="AST\Expression\Statement\Id_Node.cs" />
+    <Compile Include="Info\Int_Info.cs" />
+    <Compile Include="AST\Expression\Non_Statement\NonStatement_Node.cs" />
+    <Compile Include="Info\Nil_Info.cs" />
+    <Compile Include="Lexer_Complement.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="AST\Expression\Non_Statement\Binary\Logical\Or_Node.cs" />
+    <Compile Include="AST\Expression\Non_Statement\Binary\Arithmetic\Plus_Node.cs" />
+    <Compile Include="ParsingExceptions.cs" />
+    <Compile Include="Info\Procedure_Info.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AST\Expression\Statement\Typefields_Node.cs" />
+    <Compile Include="AST\Expression\Non_Statement\Unary\Unary_Node.cs" />
+    <Compile Include="AST\Expression\Statement\Flow_Control\While_Node.cs" />
+    <Compile Include="AST\Expression\Non_Statement\Atomic\String_Node.cs" />
+    <Compile Include="AST\Expression\Non_Statement\Atomic\Idaccess_Node.cs" />
+    <Compile Include="Info\Record_Info.cs" />
+    <Compile Include="Report.cs" />
+    <Compile Include="Scope.cs" />
+    <Compile Include="Info\String_Info.cs" />
+    <Compile Include="Info\Tiger_Info.cs" />
+    <Compile Include="Tiger_Compiler_Program.cs" />
+    <Compile Include="Tiger_Type.cs" />
+    <Compile Include="AST\Expression\Non_Statement\Binary\Type_Comparer\Typecomparer_Node.cs" />
+    <Compile Include="AST\Expression\Statement\Declaration\Typedec_Node.cs" />
+    <Compile Include="Info\Type_Info.cs" />
+    <Compile Include="AST\Expression\Statement\Type_Node.cs" />
+    <Compile Include="AST\Expression\Non_Statement\Atomic\Value_Node.cs" />
+    <Compile Include="Info\Variable_Info.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="bin\Debug\TigerCompiler.vshost.exe.config" />
+    <None Include="bin\Debug\TigerCompiler.vshost.exe.manifest" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Grammar\tiger.g" />
+    <None Include="Grammar\tiger.tokens" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\TigerCompiler.csprojResolveAssemblyReference.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\TigerCompiler.vshost.exe" />
+    <Content Include="obj\Debug\TigerCompiler.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\TigerCompiler.exe" />
+    <Content Include="obj\Debug\TigerCompiler.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
